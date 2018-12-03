@@ -1,0 +1,524 @@
+body {
+	font-family: SFUIDisplay;
+	font-size: 16px;
+	background-color: #f9f9fa;
+}
+
+header {
+	height: 270px;
+	width: 100%;
+	text-align: center;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+}
+
+.stories {
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 200px;
+	width: 750px;
+	margin: auto;
+}
+
+.smallstory {
+	display: block;
+	position: relative;
+	width: 74px;
+	height: 74px;
+	overflow: hidden;
+	padding:0;
+	-webkit-border-radius: 50%;
+	        border-radius: 50%;
+	border: 4px solid transperent;
+
+}
+
+.smallstory:before {
+	content: '';
+	position: absolute;
+	top: 2px;
+	bottom: 2px;
+	left: 2px;
+	right: 2px;
+	-webkit-border-radius: 50%;
+	        border-radius: 50%;
+	background: -webkit-linear-gradient(40deg, #ff0, #f0f, #00f);
+	background: -o-linear-gradient(40deg, #ff0, #f0f, #00f);
+	background: linear-gradient(50deg, #ff0, #f0f, #00f);
+	z-index: -2;
+}
+
+.smallstory .smallstory-wrapper {
+	position: absolute;
+	width: 58px;
+	height: 58px;
+	top: 5px;
+	left: 5px;
+	text-align: center;
+	-webkit-border-radius: 50%;
+	        border-radius: 50%;
+	border: 3px solid white;
+	background: transparent;
+}
+
+.smallstory .smallstory-wrapper img {
+
+	-webkit-border-radius: 50%;
+	        border-radius: 50%;
+}
+
+header {
+	display: inline-block;
+}
+
+.story {
+	display: block;
+	width: 106px;
+	height: 106px;
+	overflow: hidden;
+	padding:0;
+	-webkit-border-radius: 50%;
+	        border-radius: 50%;
+	border: 4px solid transperent;
+	position: relative;
+}
+
+.story:before {
+	content: '';
+	position: absolute;
+	top: 2px;
+	bottom: 2px;
+	left: 2px;
+	right: 2px;
+	-webkit-border-radius: 50%;
+	        border-radius: 50%;
+	background: -webkit-linear-gradient(40deg, #ff0, #f0f, #00f);
+	background: -o-linear-gradient(40deg, #ff0, #f0f, #00f);
+	background: linear-gradient(50deg, #ff0, #f0f, #00f);
+	z-index: -2;
+}
+
+.story .story-wrapper {
+	position: absolute;
+	width: 90px;
+	height: 90px;
+	top: 5px;
+	left: 5px;
+	text-align: center;
+	-webkit-border-radius: 50%;
+	        border-radius: 50%;
+	border: 3px solid white;
+	background: transparent;
+}
+
+.story .story-wrapper img {
+	width: 90px;
+	height: 90px;
+	-webkit-border-radius: 50%;
+	        border-radius: 50%;
+}
+
+.ava-wrapper {
+	display: inline-block;
+	position: relative;
+	margin: 0 20px;
+	left: 0;
+	text-align: center;
+}
+
+.ava-wrapper img {
+	width: 58px;
+	height: 58px;
+}
+
+.ava-wrapper .delete img{
+	display: inline-block;
+	position: absolute;
+	bottom: 50px;
+	float: right;
+	right: 0;
+	width: 20px;
+	height: 20px;
+}
+
+.left-block {
+	display: block;
+	position: relative;
+	float: left;
+}
+
+.left-block .smallstory {
+	display: block;
+	position: relative;
+	width: 74px;
+	height: 74px;
+	overflow: hidden;
+	padding:0;
+	-webkit-border-radius: 50%;
+	        border-radius: 50%;
+	border: 4px solid transperent;
+
+}
+
+.left-block .smallstory:before {
+	content: '';
+	position: absolute;
+	top: 2px;
+	bottom: 2px;
+	left: 2px;
+	right: 2px;
+	-webkit-border-radius: 50%;
+	        border-radius: 50%;
+	background: -webkit-linear-gradient(40deg, #ff0, #f0f, #00f);
+	background: -o-linear-gradient(40deg, #ff0, #f0f, #00f);
+	background: linear-gradient(50deg, #ff0, #f0f, #00f);
+	z-index: -2;
+}
+
+.left-block .smallstory .smallstory-wrapper {
+	position: absolute;
+	width: 58px;
+	height: 58px;
+	top: 5px;
+	left: 5px;
+	text-align: center;
+	-webkit-border-radius: 50%;
+	        border-radius: 50%;
+	border: 3px solid white;
+	background: transparent;
+}
+
+#chevron-left {
+	position: relative;
+	top: 113px;
+	text-align: center;
+	padding: 12px;
+	margin-bottom: 6px;
+	height: 40px;
+	width: 16px;
+	-webkit-transform: rotate(90deg);
+	    -ms-transform: rotate(90deg);
+	        transform: rotate(90deg);
+}
+
+#chevron-left:before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 5px;
+	width: 16px;
+	background: #000;
+     -webkit-border-radius: 25%;
+             border-radius: 25%;
+	    -webkit-transform: skew(0deg, 45deg);
+	        -ms-transform: skew(0deg, 45deg);
+	            transform: skew(0deg, 45deg);
+}
+
+#chevron-left:after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 15px;
+	height: 5px;
+	width: 16px;
+	background: #000;
+	-webkit-border-radius: 25%;
+	        border-radius: 25%;
+    -webkit-transform: skew(0deg, -45deg);
+        -ms-transform: skew(0deg, -45deg);
+            transform: skew(0deg, -45deg);
+}
+
+#chevron-right {
+	position: relative;
+	bottom: 113px;
+	text-align: center;
+	padding: 12px;
+	margin: auto;
+	left: 290px;
+	margin-bottom: 6px;
+	height: 40px;
+	width: 16px;
+	-webkit-transform: rotate(90deg);
+	    -ms-transform: rotate(90deg);
+	        transform: rotate(90deg);
+}
+
+#chevron-right:before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 5px;
+	width: 16px;
+	background: #000;
+     -webkit-border-radius: 25%;
+             border-radius: 25%;
+	    -webkit-transform: skew(0deg, -45deg);
+	        -ms-transform: skew(0deg, -45deg);
+	            transform: skew(0deg, -45deg);
+}
+
+#chevron-right:after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 15px;
+	height: 5px;
+	width: 16px;
+	background: #000;
+	-webkit-border-radius: 25%;
+	        border-radius: 25%;
+    -webkit-transform: skew(0deg, 45deg);
+        -ms-transform: skew(0deg, 45deg);
+            transform: skew(0deg, 45deg);
+}
+
+.left-block .smallstory .smallstory-wrapper img {
+
+	-webkit-border-radius: 50%;
+	        border-radius: 50%;
+}
+.left-block .ava-wrapper {
+	display: block;
+	height: 100px;
+	position: relative;
+	margin: 0 20px;
+	left: 0;
+	text-align: left;
+	
+}
+
+.left-block .ava-wrapper p {
+	position: relative;
+	bottom: 60px;
+	display: inline-block;
+	margin-left: 30%;
+}
+
+.left-block hr {
+	margin: 0 20px 10px;
+	height: 1px;
+	width: 260px;
+	height: 1px;
+	background: #b5b5b5;
+}
+
+.left-block form {
+	margin: 0 20px 25px;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+}
+
+
+.left-block form input {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	font-family: SFUIDisplay;
+	font-size: 16px;
+	width: 250px;
+	height: 28px;
+	margin: 0;
+	padding-left: 10px;
+	border: 1px solid #d2d2d2;
+	-webkit-border-radius: 5px;
+	        border-radius: 5px;
+}
+
+.left-block form button {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	position: absolute;
+	width: 32px;
+	height: 32px;
+	margin: 0;
+	right: 20px;
+	text-align: center;
+	-webkit-border-radius: 5px;
+	        border-radius: 5px;
+	background: #d2d2d2;
+	border: 1px solid #d2d2d2;
+}
+
+.right-block {
+	position: relative;
+	display: block;
+	float: right;
+	border: 1px solid #d2d2d2;
+	-webkit-border-radius: 5px;
+	        border-radius: 5px;
+	/*right: 20px;*/
+}
+
+.right-block table{
+	border-collapse: collapse;
+	/*border: 1px solid #d2d2d2;*/
+	-webkit-border-radius: 5px;
+	        border-radius: 5px;
+}
+
+
+
+.right-block table th{
+	background: #fff;
+	border-collapse: collapse;
+	padding: 10px;
+	border: 1px solid #d2d2d2;
+	border-top: 0;
+	border-left: 0px;
+	/*-webkit-border-radius: 5px;*/
+	        /*border-radius: 5px;*/
+}
+
+.content {
+	display: block;
+	position: absolute;
+	margin: 0 auto;
+	left: 0;
+	right: 0;
+	max-width: 1100px;
+	height: 1000px;
+}
+
+.right-block table th img {
+	margin-right: 10px;
+}
+
+.right-block table td{
+	border-collapse: collapse;
+	padding: 10px;
+	border: 1px solid #d2d2d2;
+	border-bottom: 0px;
+	border-left: 0px;
+}
+.Прямоугольник__скругл__углы_5 {
+  border-width: 1px;
+  border-color: rgb(181, 181, 181);
+  border-style: solid;
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+  left: 863px;
+  top: 269px;
+  width: 103px;
+  height: 20px;
+  z-index: 90;
+}
+
+
+.right-block table button{
+	width: 103px;
+	height: 20px;
+	background-color: #fff;
+	font-family: SFUIDisplay;
+	font-size: 14px;
+	border: 1px solid #d2d2d2;
+	-webkit-border-radius: 5px;
+	        border-radius: 5px;
+}
+
+
+.okno {
+	width: 230px;
+	height: 20px;
+	text-align: center;
+	padding: 15px;
+	background-color: rgb(255, 255, 255);
+	border: 3px solid #cc0081;
+	border-radius: 10px;
+	color: #000000;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	margin: auto;
+  }
+
+  .modal-mask {
+	position: fixed;
+	z-index: 9998;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, .5);
+	display: table;
+	transition: opacity .3s ease;
+  }
+  
+  .modal-wrapper {
+	display: table-cell;
+	vertical-align: middle;
+  }
+  
+  .modal-container {
+	width: 300px;
+	margin: 0px auto;
+	padding: 20px 30px;
+	background-color: #fff;
+	border-radius: 2px;
+	box-shadow: 0 2px 8px rgba(0, 0, 0, .33);
+	transition: all .3s ease;
+	font-family: Helvetica, Arial, sans-serif;
+  }
+  
+  .modal-header h3 {
+	margin-top: 0;
+	color: #42b983;
+  }
+  
+  .modal-body {
+	margin: 20px 0;
+  }
+  
+  .modal-default-button {
+	float: right;
+  }
+  
+  /*
+   * The following styles are auto-applied to elements with
+   * transition="modal" when their visibility is toggled
+   * by Vue.js.
+   *
+   * You can easily play with the modal transition by editing
+   * these styles.
+   */
+  
+  .modal-enter {
+	opacity: 0;
+  }
+  
+  .modal-leave-active {
+	opacity: 0;
+  }
+  
+  .modal-enter .modal-container,
+  .modal-leave-active .modal-container {
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+  }
+
+  
